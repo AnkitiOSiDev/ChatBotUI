@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC16CFAE2146E8D900656622 /* ASChatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC16CFAC2146E8D900656622 /* ASChatCollectionViewCell.swift */; };
+		BC16CFAF2146E8D900656622 /* ASChatCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC16CFAD2146E8D900656622 /* ASChatCollectionViewCell.xib */; };
 		BC41F63C2146DF6C007AA154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC41F63B2146DF6C007AA154 /* AppDelegate.swift */; };
 		BC41F6412146DF6C007AA154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC41F63F2146DF6C007AA154 /* Main.storyboard */; };
 		BC41F6432146DF70007AA154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC41F6422146DF70007AA154 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC16CFAC2146E8D900656622 /* ASChatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASChatCollectionViewCell.swift; sourceTree = "<group>"; };
+		BC16CFAD2146E8D900656622 /* ASChatCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ASChatCollectionViewCell.xib; sourceTree = "<group>"; };
 		BC41F6382146DF6C007AA154 /* BotUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BotUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC41F63B2146DF6C007AA154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC41F6402146DF6C007AA154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,6 +39,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC16CFAA2146E89B00656622 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC16CFAB2146E8AE00656622 /* Chat */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC16CFAB2146E8AE00656622 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				BC16CFAC2146E8D900656622 /* ASChatCollectionViewCell.swift */,
+				BC16CFAD2146E8D900656622 /* ASChatCollectionViewCell.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		BC41F62F2146DF6C007AA154 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				BC41F63B2146DF6C007AA154 /* AppDelegate.swift */,
+				BC16CFAA2146E89B00656622 /* Views */,
 				BC41F64D2146DFD3007AA154 /* ASBotChatViewController.swift */,
 				BC41F63F2146DF6C007AA154 /* Main.storyboard */,
 				BC41F6422146DF70007AA154 /* Assets.xcassets */,
@@ -123,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC16CFAF2146E8D900656622 /* ASChatCollectionViewCell.xib in Resources */,
 				BC41F6462146DF70007AA154 /* LaunchScreen.storyboard in Resources */,
 				BC41F6432146DF70007AA154 /* Assets.xcassets in Resources */,
 				BC41F6412146DF6C007AA154 /* Main.storyboard in Resources */,
@@ -136,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC16CFAE2146E8D900656622 /* ASChatCollectionViewCell.swift in Sources */,
 				BC41F64E2146DFD3007AA154 /* ASBotChatViewController.swift in Sources */,
 				BC41F63C2146DF6C007AA154 /* AppDelegate.swift in Sources */,
 			);
