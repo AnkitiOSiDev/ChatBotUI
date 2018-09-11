@@ -49,25 +49,14 @@ extension ASBotChatViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if  let sizingCell = ASChatCollectionViewCell.sizingCell {
             sizingCell.prepareForReuse()
-            configureCell(sizingCell, at: indexPath)
+            sizingCell.configureCell(sizingCell, at: indexPath)
             sizingCell.setNeedsLayout()
             sizingCell.layoutIfNeeded()
             return sizingCell.frame.size
         }
         return CGSize(width: 0, height: 0)
     }
-    
-    func configureCell(_ cell: ASChatCollectionViewCell, at indexPath: IndexPath){
-       
-        if indexPath.row % 2 == 0 {
-            cell.frame.size =  CGSize(width: 375, height: 100)
-            cell.backgroundColor = UIColor.red
-        }else {
-            cell.frame.size =  CGSize(width: 375, height: 50)
-            cell.backgroundColor = UIColor.blue
-        }
-        
-    }
+
 }
 
 extension ASBotChatViewController: UICollectionViewDataSource {
@@ -77,7 +66,7 @@ extension ASBotChatViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ASChatCollectionViewCell.identifier, for: indexPath) as? ASChatCollectionViewCell {
-            configureCell(cell, at: indexPath)
+            cell.configureCell(cell, at: indexPath)
             return cell
         }
         
